@@ -3,31 +3,258 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --background: #201F1F;
+    --primary-text: white;
+    --secondary-text: #C6C6C6;
+    --tetiary-text: #6CACE4;
+    --bg-btn: #292828;
+    --text-btn: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.light-theme {
+    --background: #FFFFFF;
+    --primary-text: black;
+    --secondary-text: black;
+    --tetiary-text: #6CACE4;
+    --bg-btn: black;
+    --text-btn: #F0F0F0;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+html {
+    scroll-behavior: smooth;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.navlinks a {
+    color: var(--secondary-text);
 }
+
+.dropdown-wrapper a {
+    color: var(--secondary-text);
+}
+
+
+* {
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.main {
+    font-family: 'Inter';
+    background-color: var(--background);
+    transition: all .3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter/static/Inter-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Rowdies';
+    src: url(../font/Rowdies/Rowdies-Light.ttf);
+}
+
+/*********** NavbarComponent ***********/
+
+
+.navbar-container {
+    color: var(--primary-text);
+}
+
+.main-textwrapper {
+    color: var(--primary-text);
+}
+
+.experience-wrapper h3,
+h5,
+button,
+h1 {
+    color: var(--primary-text);
+}
+
+.experience-wrapper h5,
+li {
+    color: var(--secondary-text);
+}
+
+.pro-wrapper h3,
+h2 {
+    color: var(--primary-text);
+}
+
+.pro-wrapper p {
+    color: var(--secondary-text);
+}
+
+.pro-wrapper h5 {
+    color: var(--tetiary-text);
+}
+
+.active-btn {
+    background-color: var(--bg-btn);
+}
+
+.contact-wrapper h2 {
+    color: var(--primary-text);
+}
+
+.contact-wrapper a {
+    color: var(--secondary-text);
+}
+
+.unwana {
+    background-image: linear-gradient(45deg, #9845E8, #33D2FF, #65AEDC, #DD5789);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.slot1 {
+    background-color: var(--bg-btn);
+    color: var(--text-btn);
+}
+
+.slot2 {
+    background-color: var(--bg-btn);
+    color: var(--text-btn);
+}
+
+.dropdown {
+    display: none;
+}
+
+@media only screen and (max-width:334px) {
+    .navbar-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .navlinks {
+        display: none !important;
+    }
+
+    .main-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .unwana {
+        font-size: 40px !important;
+    }
+
+    .main-textwrapper p {
+        font-size: 15px !important;
+    }
+
+    .dropdown {
+        display: block !important;
+        width: 20px !important;
+    }
+
+    .experience-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .company-work main {
+        align-items: center !important;
+    }
+
+    .company-work h1 {
+        font-size: 18px !important;
+    }
+
+    .company-work h5 {
+        font-size: 10px !important;
+    }
+
+    .pro-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .pro-container-gen {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .contact-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .contact-btns {
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (min-width: 335px) and (max-width: 425px) {
+    .navbar-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .navlinks {
+        display: none !important;
+    }
+
+    .main-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .unwana {
+        font-size: 40px !important;
+    }
+
+    .main-textwrapper p {
+        font-size: 15px !important;
+    }
+
+    .dropdown {
+        display: block;
+        width: 20px !important;
+    }
+
+    .experience-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .company-work main {
+        align-items: center !important;
+    }
+
+    .company-work h1 {
+        font-size: 18px !important;
+    }
+
+    .company-work h5 {
+        font-size: 10px !important;
+    }
+
+    .pro-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .pro-container-gen {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .contact-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .contact-btns {
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 610px) {}
+
+@media only screen and (min-width: 611px) and (max-width: 768px) {}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+@media only screen and (min-width: 1025px) and (max-width: 1180px) {}
