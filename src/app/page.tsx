@@ -6,7 +6,7 @@ import ExperienceComponent from '../../Components/ExperienceComponent'
 import ProComponent from '../../Components/ProComponent'
 import ContactComponent from '../../Components/ContactComponent'
 import DropdownComponent from '../../Components/DropdownComponent'
-const page = () => {
+const Page = () => {
   const [isDarkMode , setDarkMode] = useState<boolean>(false);
   const toggleDarkmode = () => {
     setDarkMode(!isDarkMode)
@@ -27,4 +27,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
