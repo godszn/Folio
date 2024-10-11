@@ -6,7 +6,7 @@ import link from '../src/assets/link-m 1.svg'
 import pro1 from '../src/assets/getlinked.jpg'
 import pro2 from '../src/assets/hangout.jpg'
 import pro3 from '../src/assets/adimot.jpg'
-import pro4 from '../src/assets/Bitstamp.jpg'
+import pro4 from '../src/assets/bitstamp.jpg'
 
 const ProComponent = () => {
     return (
