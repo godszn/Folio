@@ -20,7 +20,7 @@ const Page = () => {
      <NavbarComponent toggleDarkmode={toggleDarkmode} isDarkMode= {isDarkMode} menuClick = {dropdown} />
      <MainComponent isDarkMode = {isDarkMode}/>
      <ExperienceComponent/>
-     <ProComponent/>
+     <ProComponent isDarkMode = {isDarkMode}/>
      <ContactComponent isDarkMode = {isDarkMode}/>
      {isDropdown && <DropdownComponent menuClick={dropdown} isDropdown={isDropdown}/>}
     </main>

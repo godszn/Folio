@@ -34,9 +34,6 @@ const ContactComponent: React.FC<contactProp> = ({ isDarkMode }) => {
                                 LinkedIn
                             </a>
                         </Link>
-                        <a target="_blank" rel="noopener noreferrer">
-                            LinkedIn
-                        </a>
                     </button>
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dup : up} />

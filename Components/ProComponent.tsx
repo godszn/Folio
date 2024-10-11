@@ -2,13 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import git from '../src/assets/Group.svg'
+import dgit from '../src/assets/dgitt.svg'
 import link from '../src/assets/link-m 1.svg'
+import dlink from '../src/assets/dlink.svg'
 import pro1 from '../src/assets/getlinked.jpg'
 import pro2 from '../src/assets/hangout.jpg'
 import pro3 from '../src/assets/adimot.jpg'
 import pro4 from '../src/assets/bitstamp.jpg'
+interface proProp {
+ isDarkMode: boolean;
+}
 
-const ProComponent = () => {
+const ProComponent: React.FC<proProp> = ({isDarkMode}) => {
     return (
         <div>
             <div id='projects' className="pro-wrapper mt-[100px] ml-[180px] pb-[160px] mr-[180px]" style={{ borderBottom: '1px solid #C6C6C6' }}>
@@ -29,12 +34,12 @@ const ProComponent = () => {
                                     <span className='flex gap-[20px]'>
                                         <Link href="https://github.com/godszn/Astrobox" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={git} />
+                                                <Image alt='' className='cursor-pointer' src={isDarkMode ? dgit : git} />
                                             </a>
                                         </Link>
                                         <Link href="https://astrobox-godszn.vercel.app" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={link} />
+                                                <Image alt='' className='cursor-pointer' src={isDarkMode ? dlink : link} />
                                             </a>
                                         </Link>
                                     </span>
@@ -61,12 +66,12 @@ const ProComponent = () => {
                                     <span className='flex gap-[20px]'>
                                         <Link href="https://github.com/godszn/HangoutDAO-Clone" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={git} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dgit : git} />
                                             </a>
                                         </Link>
                                         <Link href="https://hangout-dao-clone.vercel.app" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={link} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dlink : link} />
                                             </a>
                                         </Link>
                                     </span>
@@ -92,12 +97,12 @@ const ProComponent = () => {
                                     <span className='flex gap-[20px]'>
                                         <Link href="https://github.com/godszn/AdiMot" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={git} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dgit : git} />
                                             </a>
                                         </Link>
                                         <Link href="https://adimot.com.ng" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={link} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dlink : link} />
                                             </a>
                                         </Link>
                                     </span>
@@ -123,12 +128,12 @@ const ProComponent = () => {
                                     <span className='flex gap-[20px]'>
                                         <Link href="https://github.com/godszn/Bitstamp-clone" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={git} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dgit : git} />
                                             </a>
                                         </Link>
                                         <Link href="https://bitstamp-clone.vercel.app/" legacyBehavior>
                                             <a target="_blank" rel="noopener noreferrer">
-                                                <Image alt='' className='cursor-pointer' src={link} />
+                                            <Image alt='' className='cursor-pointer' src={isDarkMode ? dlink : link} />
                                             </a>
                                         </Link>
                                     </span>
