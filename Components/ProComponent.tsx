@@ -87,7 +87,7 @@ const ProComponent: React.FC<proProp> = ({isDarkMode}) => {
 
                         <section className="pro-container">
                             <div className="pro-widget">
-                                <Image src={pro3} className='rounded-[.5rem]' style={{ boxShadow: '1px 1px 6px #f0ffffa1' }} alt='' />
+                                <Image src={pro3} className='rounded-[.5rem]' style={{boxShadow: isDarkMode ? '1px 1px 6px rgb(41 46 46 / 63%) 1px 1px 6px' : '1px 1px 6px #f0ffffa1'}} alt='' />
                             </div>
                             <div className="pro-text flex flex-col gap-[10px]">
                                 <section className='flex justify-between mt-[30px]'>
