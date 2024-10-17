@@ -43,7 +43,7 @@ const ContactComponent: React.FC<contactProp> = ({ isDarkMode }) => {
                     </button>
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dgit : git} />
-                        <a href="">
+                        <a href="https://github.com/">
                             Github
                         </a>
                     </button>
