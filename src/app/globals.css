@@ -251,10 +251,177 @@ h2 {
     }
 }
 
-@media only screen and (min-width: 426px) and (max-width: 610px) {}
+@media only screen and (min-width: 426px) and (max-width: 610px) {
+    .navbar-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
 
-@media only screen and (min-width: 611px) and (max-width: 768px) {}
+    .navlinks {
+        display: none !important;
+    }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+    .main-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .unwana {
+        font-size: 40px !important;
+    }
+
+    .main-textwrapper p {
+        font-size: 15px !important;
+    }
+
+    .dropdown {
+        display: block;
+        width: 20px !important;
+    }
+
+    .experience-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .company-work main {
+        align-items: center !important;
+    }
+
+    .company-work h1 {
+        font-size: 18px !important;
+    }
+
+    .company-work h5 {
+        font-size: 10px !important;
+    }
+
+    .pro-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .pro-widget img {
+        width: 100% !important;
+    }
+
+    .pro-container-gen {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .contact-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .contact-btns {
+        flex-direction: column !important;
+    }
+}
+
+@media only screen and (min-width: 611px) and (max-width: 768px) {
+    .navbar-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .navlinks {
+        display: none !important;
+    }
+
+    .main-wrapper {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .unwana {
+        font-size: 55px !important;
+    }
+
+    .main-textwrapper p {
+        font-size: 18px !important;
+    }
+
+    .dropdown {
+        display: block;
+        width: 20px !important;
+    }
+
+    .experience-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .company-work main {
+        align-items: center !important;
+    }
+
+    .company-work h1 {
+        font-size: 18px !important;
+    }
+
+    .company-work h5 {
+        font-size: 12px !important;
+    }
+
+    .pro-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .pro-container-gen {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+    .contact-wrapper {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .contact-btns {
+        flex-direction: column !important;
+    }
+
+    .pro-widget img {
+        width: 100% !important;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .navbar-container {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .main-wrapper {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .experience-wrapper {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .pro-wrapper {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .pro-text h1 {
+        font-size: 20px !important;
+    }
+
+    .contact-wrapper {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+    }
+
+    .contact-btns {
+        display: grid !important;
+        grid-template-columns: repeat(2 , minmax(0, 1fr)) !important;
+    }
+
+}
 
 @media only screen and (min-width: 1025px) and (max-width: 1180px) {}
