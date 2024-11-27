@@ -23,9 +23,11 @@ const ContactComponent: React.FC<contactProp> = ({ isDarkMode }) => {
                 <section className="contact-btns flex gap-[12px]">
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dmail : mail} />
-                        <a href="">
-                            Send an email
-                        </a>
+                        <Link href='mailto:unwanamichael2642@gmail.com?subject=Hey!&body=Message'legacyBehavior >
+                            <a target="_blank" rel="noopener noreferrer">
+                                Send an email
+                            </a>
+                        </Link>
                     </button>
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dlinked : linked} />
@@ -37,13 +39,15 @@ const ContactComponent: React.FC<contactProp> = ({ isDarkMode }) => {
                     </button>
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dup : up} />
-                        <a href="">
+                        <Link href="https://www.upwork.com/freelancers/~01d20ef9c3fb2cb1ab" legacyBehavior>
+                        <a target="_blank" rel="noopener noreferrer">
                             Upwork
                         </a>
+                        </Link>
                     </button>
                     <button className='w-[180px] h-[40px] flex gap-[9px] items-center justify-center' style={{ border: '1px solid #C4C4C4', borderRadius: '5px' }} >
                         <Image alt='' src={isDarkMode ? dgit : git} />
-                        <a href="https://github.com/">
+                        <a href="https://github.com/godszn">
                             Github
                         </a>
                     </button>
